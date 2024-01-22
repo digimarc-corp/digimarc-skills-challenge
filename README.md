@@ -1,0 +1,1 @@
+# digimarc-skills-challenge
