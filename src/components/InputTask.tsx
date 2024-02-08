@@ -42,6 +42,7 @@ export const InputTask: React.FC<InputTaskProps> = ({
               variant="filled"
               placeholder={INPUT_PLACEHOLDER}
               value={TaskInput}
+              data-testid="taskinput"
             />
             <IconButton
               aria-label="done"
@@ -49,6 +50,7 @@ export const InputTask: React.FC<InputTaskProps> = ({
               size="md"
               variant="solid"
               type="submit"
+              data-testid="addTaskButton"
             />
           </Flex>
         </FormControl>

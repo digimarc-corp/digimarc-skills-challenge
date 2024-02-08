@@ -95,6 +95,7 @@ export const TaskField: React.FC<TaskFieldProps> = ({
         <EditablePreview
           {...(TaskObj.isCompleted ? completedProps : {})}
           wordBreak="break-all"
+          data-testid="task"
         />
         <EditableInput />
       </Editable>
@@ -103,6 +104,7 @@ export const TaskField: React.FC<TaskFieldProps> = ({
         icon={<CheckIcon />}
         size="sm"
         variant="ghost"
+        data-testid="completeTaskButton"
         onClick={() => {
           setItemsCompleted(
             TaskObj.isCompleted ? itemsCompleted - 1 : itemsCompleted + 1
@@ -123,6 +125,7 @@ export const TaskField: React.FC<TaskFieldProps> = ({
         icon={<CloseIcon />}
         size="sm"
         variant="ghost"
+        data-testid="closeTaskButton"
         onClick={() => {
           setFieldAnimate(deleteFieldAnimate);
           setTimeout(() => {

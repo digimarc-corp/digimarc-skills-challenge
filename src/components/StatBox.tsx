@@ -33,6 +33,7 @@ export const StatBox: React.FC<StatBoxProps> = ({
       p="6"
       rounded="md"
       bg={statColor}
+      data-testid={title}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
       onHoverStart={() => {
